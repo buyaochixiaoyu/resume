@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>邱子晨 · 数据分析师求职简历</title>
+<style>
+:root{
+  --bg:#F5F9FF;
+  --card:#FFFFFF;
+  --ink:#1E2A44;
+  --sub:#5C6B89;
+  --line:#E6ECF7;
+  --tint:#EDF3FF;
+  --coral:#FF6B6B;
+  --teal:#14B8A6;
+  --indigo:#6366F1;
+  --amber:#FBBF24;
+  --sky:#38BDF8;
+  --radius:18px;
+  --shadow:0 10px 30px rgba(30,42,68,.06);
+  --shadow-hover:0 16px 40px rgba(30,42,68,.11);
+  --font:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:var(--font);
+  background:var(--bg);
+  color:var(--ink);
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+  padding-bottom:0;
+}
+body::before{
+  content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+  background:
+    radial-gradient(520px 520px at 88% -6%, rgba(255,107,107,.13), transparent 62%),
+    radial-gradient(560px 560px at -8% 12%, rgba(20,184,166,.13), transparent 60%),
+    radial-gradient(600px 600px at 105% 92%, rgba(99,102,241,.12), transparent 62%);
+}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px;}
+
+/* ---------- Hero ---------- */
+.hero{position:relative;padding:56px 0 34px;overflow:hidden;}
+.hero .blob{position:absolute;border-radius:50%;filter:blur(2px);opacity:.75;z-index:0;}
+.b1{width:210px;height:210px;right:-40px;top:-60px;background:rgba(255,107,107,.16);}
+.b2{width:150px;height:150px;right:120px;bottom:-40px;background:rgba(20,184,166,.18);}
+.b3{width:96px;height:96px;right:250px;top:70px;background:rgba(251,191,36,.22);}
+.hero-inner{position:relative;z-index:1;display:flex;gap:34px;align-items:flex-start;flex-wrap:wrap;}
+.avatar{
+  flex:0 0 auto;width:112px;height:112px;border-radius:34px;
+  background:linear-gradient(140deg,var(--coral),var(--amber) 55%,var(--teal));
+  display:flex;align-items:center;justify-content:center;
+  color:#fff;font-size:44px;font-weight:700;letter-spacing:2px;
+  box-shadow:0 14px 30px rgba(255,107,107,.28);
+}
+.hero-text{flex:1 1 380px;min-width:280px;}
+h1{font-size:clamp(34px,5.4vw,50px);font-weight:800;letter-spacing:1px;line-height:1.2;}
+.hero .job{margin-top:8px;font-size:clamp(16px,2.4vw,20px);font-weight:700;color:var(--coral);}
+.hero .job span{color:var(--sub);font-weight:500;font-size:15px;}
+.hero .meta{margin-top:10px;color:var(--sub);font-size:15px;}
+.badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px;}
+.badge{
+  display:inline-flex;align-items:center;gap:6px;
+  padding:6px 14px;border-radius:999px;font-size:13px;font-weight:600;
+  background:#fff;border:1px solid var(--line);color:var(--ink);box-shadow:0 4px 14px rgba(30,42,68,.05);
+}
+.badge i{width:8px;height:8px;border-radius:50%;display:inline-block;}
+.hero-card{
+  flex:0 1 300px;min-width:260px;background:rgba(255,255,255,.86);
+  border:1px solid var(--line);border-radius:var(--radius);padding:20px 22px;box-shadow:var(--shadow);
+  backdrop-filter:blur(4px);
+}
+.hero-card h3{font-size:14px;color:var(--sub);font-weight:600;letter-spacing:1px;margin-bottom:12px;}
+.hero-card .row{display:flex;justify-content:space-between;gap:12px;font-size:14px;padding:7px 0;border-bottom:1px dashed var(--line);}
+.hero-card .row:last-child{border-bottom:none;}
+.hero-card .row b{color:var(--ink);font-weight:600;}
+.hero-card .row span{color:var(--sub);flex:0 0 62px;}
+
+/* ---------- Nav ---------- */
+nav{
+  position:sticky;top:0;z-index:20;margin:6px 0 26px;
+  background:rgba(255,255,255,.88);backdrop-filter:blur(10px);
+  border:1px solid var(--line);border-radius:999px;padding:8px 10px;
+  display:flex;gap:4px;align-items:center;overflow-x:auto;box-shadow:var(--shadow);
+}
+nav::-webkit-scrollbar{display:none;}
+nav a{
+  flex:0 0 auto;text-decoration:none;color:var(--sub);font-size:14px;font-weight:600;
+  padding:7px 15px;border-radius:999px;white-space:nowrap;transition:.22s;
+}
+nav a:hover{color:var(--ink);background:var(--tint);}
+nav .print{
+  margin-left:auto;flex:0 0 auto;border:none;cursor:pointer;font-family:var(--font);
+  background:var(--ink);color:#fff;font-size:13px;font-weight:600;padding:8px 16px;border-radius:999px;transition:.22s;
+}
+nav .print:hover{background:var(--indigo);}
+
+/* ---------- Section ---------- */
+section{margin-bottom:34px;}
+.sec-head{display:flex;align-items:center;gap:12px;margin-bottom:16px;}
+.sec-head .bars{display:flex;gap:5px;align-items:center;}
+.sec-head .bars b{display:block;height:7px;border-radius:99px;}
+.sec-head .bars b:first-child{width:34px;}
+.sec-head .bars b:last-child{width:9px;}
+.sec-head h2{font-size:23px;font-weight:800;letter-spacing:.5px;}
+.sec-head .note{margin-left:auto;color:var(--sub);font-size:13px;}
+
+.card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:24px 26px;box-shadow:var(--shadow);transition:.25s;
+}
+.card:hover{box-shadow:var(--shadow-hover);transform:translateY(-2px);}
+.grid{display:grid;gap:16px;}
+.g2{grid-template-columns:repeat(2,1fr);}
+.g3{grid-template-columns:repeat(3,1fr);}
+
+/* ---------- 求职意向 ---------- */
+.intent-item{display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px dashed var(--line);}
+.intent-item:last-child{border-bottom:none;padding-bottom:0;}
+.intent-item:first-child{padding-top:0;}
+.intent-item .k{flex:0 0 76px;font-weight:700;font-size:14px;}
+.intent-item .v{flex:1;color:var(--ink);font-size:15px;}
+
+/* ---------- 教育 ---------- */
+.edu-top{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap;margin-bottom:14px;}
+.edu-top h3{font-size:20px;font-weight:800;}
+.edu-top .major{margin-top:4px;color:var(--teal);font-weight:700;font-size:15px;}
+.edu-top .major em{font-style:normal;color:var(--sub);font-weight:500;}
+.period{
+  font-size:13px;font-weight:700;color:var(--coral);background:rgba(255,107,107,.1);
+  padding:5px 14px;border-radius:999px;white-space:nowrap;
+}
+ul.dots{list-style:none;margin-top:6px;}
+ul.dots li{position:relative;padding-left:18px;margin-bottom:9px;font-size:14.6px;color:var(--ink);}
+ul.dots li:last-child{margin-bottom:0;}
+ul.dots li::before{content:"";position:absolute;left:0;top:11px;width:8px;height:8px;border-radius:50%;}
+
+/* ---------- 经历 ---------- */
+.timeline{position:relative;padding-left:26px;}
+.timeline::before{content:"";position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:linear-gradient(var(--indigo),var(--teal));opacity:.35;border-radius:2px;}
+.tl-item{position:relative;padding:14px 0;}
+.tl-item::before{content:"";position:absolute;left:-26px;top:22px;width:16px;height:16px;border-radius:50%;background:#fff;border:4px solid var(--indigo);box-shadow:0 0 0 4px rgba(99,102,241,.14);}
+.tl-item.alt::before{border-color:var(--teal);box-shadow:0 0 0 4px rgba(20,184,166,.14);}
+.tl-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;}
+.tl-head h3{font-size:17px;font-weight:800;}
+.tl-head .lead{margin-top:4px;font-size:13.6px;color:var(--sub);}
+.tag-list{display:flex;flex-wrap:wrap;gap:7px;margin-top:10px;}
+.tag{font-size:12px;font-weight:600;padding:4px 11px;border-radius:999px;background:var(--tint);color:var(--ink);}
+.kv{display:flex;gap:12px;padding:8px 0;border-bottom:1px dashed var(--line);}
+.kv:last-child{border-bottom:none;padding-bottom:0;}
+.kv .k{flex:0 0 auto;font-weight:800;font-size:13.5px;min-width:64px;}
+.kv .k::after{content:"：";}
+.kv .v{font-size:14.4px;color:var(--ink);}
+
+/* ---------- 技能 ---------- */
+.skill{border-top:4px solid var(--c);border-radius:14px;padding:18px 20px;background:#fff;border-left:1px solid var(--line);border-right:1px solid var(--line);border-bottom:1px solid var(--line);box-shadow:var(--shadow);transition:.25s;}
+.skill:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover);}
+.skill h4{font-size:15px;font-weight:800;margin-bottom:10px;display:flex;align-items:center;gap:8px;}
+.skill h4 i{width:9px;height:9px;border-radius:50%;background:var(--c);display:inline-block;}
+.skill li{list-style:none;position:relative;padding-left:16px;font-size:13.8px;margin-bottom:7px;color:var(--ink);}
+.skill li::before{content:"";position:absolute;left:0;top:9px;width:6px;height:6px;border-radius:2px;background:var(--c);opacity:.55;}
+.skill li:last-child{margin-bottom:0;}
+.skill.wide{grid-column:span 2;}
+
+/* ---------- 课程 ---------- */
+.course{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px;box-shadow:var(--shadow);transition:.25s;overflow:hidden;position:relative;}
+.course:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover);}
+.course::before{content:"";position:absolute;left:0;top:0;height:4px;width:100%;background:var(--c);}
+.course h4{font-size:16px;font-weight:800;margin:6px 0 8px;}
+.course p{font-size:13.6px;color:var(--sub);line-height:1.75;}
+.course .dot{width:26px;height:26px;border-radius:9px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:12px;font-weight:800;background:var(--c);}
+
+/* ---------- 兴趣 / 自评 ---------- */
+.hobby{display:flex;gap:14px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px 20px;box-shadow:var(--shadow);transition:.25s;}
+.hobby:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover);}
+.hobby .icon{flex:0 0 46px;height:46px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:800;color:#fff;background:var(--c);}
+.hobby h4{font-size:15px;font-weight:800;margin-bottom:4px;}
+.hobby p{font-size:13.6px;color:var(--sub);line-height:1.7;}
+
+.sum-item{background:#fff;border:1px solid var(--line);border-left:5px solid var(--c);border-radius:14px;padding:16px 20px;box-shadow:var(--shadow);transition:.25s;}
+.sum-item:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover);}
+.sum-item h4{font-size:15px;font-weight:800;margin-bottom:5px;color:var(--c);}
+.sum-item p{font-size:13.8px;color:var(--ink);line-height:1.72;}
+
+/* ---------- Footer ---------- */
+footer{
+  margin-top:14px;padding:30px 0 40px;border-top:1px solid var(--line);
+  display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;
+}
+footer .fl{display:flex;flex-wrap:wrap;gap:10px;}
+footer .fl a{
+  text-decoration:none;font-size:13.5px;font-weight:600;color:var(--ink);
+  background:#fff;border:1px solid var(--line);padding:8px 15px;border-radius:999px;transition:.22s;
+}
+footer .fl a:hover{border-color:var(--coral);color:var(--coral);transform:translateY(-2px);}
+footer .fr{color:var(--sub);font-size:13px;}
+
+/* ---------- 动画 ---------- */
+@keyframes fadeUp{from{opacity:0;transform:translateY(14px);}to{opacity:1;transform:none;}}
+.hero-inner{animation:fadeUp .55s ease both;}
+@media (prefers-reduced-motion:reduce){.hero-inner{animation:none;}}
+
+/* ---------- 响应式 ---------- */
+@media (max-width:860px){
+  .g3{grid-template-columns:repeat(2,1fr);}
+  .skill.wide{grid-column:span 2;}
+}
+@media (max-width:640px){
+  .wrap{padding:0 16px;}
+  .hero{padding:34px 0 22px;}
+  .avatar{width:88px;height:88px;border-radius:28px;font-size:34px;}
+  .hero-inner{gap:20px;}
+  .hero-card{flex:1 1 100%;}
+  .g2,.g3{grid-template-columns:1fr;}
+  .skill.wide{grid-column:span 1;}
+  .card{padding:20px 18px;}
+  .sec-head .note{display:none;}
+  .sec-head h2{font-size:20px;}
+  nav a{font-size:13px;padding:6px 12px;}
+  nav .print{display:none;}
+  .intent-item{flex-direction:column;gap:2px;}
+  .intent-item .k{flex:none;}
+  footer{flex-direction:column;align-items:flex-start;}
+}
+
+/* ---------- 打印 ---------- */
+@media print{
+  body{background:#fff;}
+  body::before{display:none;}
+  nav,footer .fr{display:none;}
+  .hero .blob{display:none;}
+  .reveal{opacity:1 !important;transform:none !important;}
+  .card,.course,.hobby,.sum-item,.skill,.hero-card{box-shadow:none;break-inside:avoid;page-break-inside:avoid;}
+  section{break-inside:avoid;page-break-inside:avoid;margin-bottom:18px;}
+  .g3{grid-template-columns:repeat(2,1fr);}
+  .hero{padding-top:10px;}
+}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <!-- ================= HERO ================= -->
+  <header class="hero">
+    <span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span>
+    <div class="hero-inner">
+      <div class="avatar">邱</div>
+      <div class="hero-text">
+        <h1>邱子晨</h1>
+        <p class="job">求职意向：数据分析师 <span>｜ 校招 / 实习 · 随时到岗</span></p>
+        <p class="meta">女 · 本科在读 · 大连财经学院 管理学院 · 大数据管理与应用专业</p>
+        <div class="badges">
+          <span class="badge"><i style="background:var(--coral)"></i>Python / SQL</span>
+          <span class="badge"><i style="background:var(--teal)"></i>数据可视化</span>
+          <span class="badge"><i style="background:var(--indigo)"></i>管理学 / 运筹学</span>
+          <span class="badge"><i style="background:var(--amber)"></i>IT 日语</span>
+        </div>
+      </div>
+      <div class="hero-card">
+        <h3>基 本 信 息</h3>
+        <div class="row"><span>电话</span><b>159-4272-4817</b></div>
+        <div class="row"><span>邮箱</span><b>2937894433@qq.com</b></div>
+        <div class="row"><span>城市</span><b>辽宁 · 大连</b></div>
+        <div class="row"><span>到岗</span><b>随时到岗 / 全职实习</b></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= NAV ================= -->
+  <nav>
+    <a href="#intention">求职意向</a>
+    <a href="#education">教育背景</a>
+    <a href="#club">社团经历</a>
+    <a href="#skills">专业技能</a>
+    <a href="#courses">主修课程</a>
+    <a href="#hobbies">兴趣爱好</a>
+    <a href="#summary">自我评价</a>
+    <button class="print" onclick="window.print()">打印 / 存为 PDF</button>
+  </nav>
+
+  <!-- ================= 求职意向 ================= -->
+  <section id="intention">
+    <div class="sec-head">
+      <span class="bars"><b style="background:var(--coral)"></b><b style="background:var(--teal)"></b></span>
+      <h2>求职意向</h2>
+      <span class="note">把业务问题变成数据问题，再把数据结论变成业务行动</span>
+    </div>
+    <div class="card">
+      <div class="intent-item"><span class="k" style="color:var(--coral)">目标岗位</span><span class="v">数据分析师 / 数据运营分析 / BI 分析（实习 · 校招）</span></div>
+      <div class="intent-item"><span class="k" style="color:var(--teal)">意向城市</span><span class="v">大连 · 北京 · 上海 · 深圳（可按需调整）</span></div>
+      <div class="intent-item"><span class="k" style="color:var(--indigo)">到岗时间</span><span class="v">可快速到岗，支持每周 5 天全职实习</span></div>
+      <div class="intent-item"><span class="k" style="color:var(--amber)">核心优势</span><span class="v">业务理解（管理学 + 运筹学）× 数据处理（Python / SQL）× 可视化表达（BI / 图表）</span></div>
+    </div>
+  </section>
+
+  <!-- ================= 教育背景 ================= -->
+  <section id="education">
+    <div class="sec-head">
+      <span class="bars"><b style="background:var(--teal)"></b><b style="background:var(--coral)"></b></span>
+      <h2>教育背景</h2>
+      <span class="note">技术 + 管理的复合知识结构</span>
+    </div>
+    <div class="card">
+      <div class="edu-top">
+        <div>
+          <h3>大连财经学院 · 管理学院</h3>
+          <p class="major">大数据管理与应用　<em>|　本科在读</em></p>
+        </div>
+        <span class="period">2023.09 — 2027.06</span>
+      </div>
+      <ul class="dots">
+        <li style="--c:var(--teal)"><span style="color:var(--sub)">主修方向涵盖程序设计、数据处理、可视化分析与经营管理，形成「技术 + 管理」复合知识结构。</span></li>
+        <li>专业核心课程：C++ 程序设计、Python 程序设计、大数据可视化分析、IT 日语、管理学、运筹学。</li>
+        <li>持续利用公开数据集与课程项目练习数据清洗、指标统计与图表呈现，保持动手频率。</li>
+      </ul>
+      <div class="tag-list" style="margin-top:16px">
+        <span class="tag" style="background:rgba(255,107,107,.12);color:var(--coral)">C++ 程序设计</span>
+        <span class="tag" style="background:rgba(20,184,166,.12);color:var(--teal)">Python 程序设计</span>
+        <span class="tag" style="background:rgba(99,102,241,.12);color:var(--indigo)">大数据可视化分析</span>
+        <span class="tag" style="background:rgba(251,191,36,.16);color:#B4810C">IT 日语</span>
+        <span class="tag" style="background:rgba(56,189,248,.14);color:#0284C7">管理学</span>
+        <span class="tag" style="background:rgba(255,107,107,.12);color:var(--coral)">运筹学</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 社团经历 ================= -->
+  <section id="club">
+    <div class="sec-head">
+      <span class="bars"><b style="background:var(--indigo)"></b><b style="background:var(--teal)"></b></span>
+      <h2>社团经历</h2>
+      <span class="note">从 0 到 1 组织活动，也用数据复盘活动</span>
+    </div>
+    <div class="card">
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-head">
+            <div>
+              <h3>计算机社团 · 社长</h3>
+              <p class="lead">带领 30+ 人团队，负责社团整体运营、活动统筹与对外联络</p>
+            </div>
+            <span class="period">2024.09 — 2026.06</span>
+          </div>
+          <div style="margin-top:12px">
+            <div class="kv"><span class="k" style="color:var(--indigo)">团队管理</span><span class="v">统筹社团日常运营，下设技术部、活动部、宣传部，建立分工清单与学期目标考核机制，让 30+ 人团队各司其职。</span></div>
+            <div class="kv"><span class="k" style="color:var(--indigo)">活动组织</span><span class="v">策划并落地招新宣讲、Python / C++ 编程训练营、数据分析主题分享会、校级编程与数据分析竞赛等活动 10+ 场，累计参与 500+ 人次。</span></div>
+            <div class="kv"><span class="k" style="color:var(--indigo)">跨方协调</span><span class="v">对接指导老师、校企合作方与兄弟社团，统筹场地、经费与人员排期，保障每场活动按期落地、零重大事故。</span></div>
+            <div class="kv"><span class="k" style="color:var(--indigo)">知识沉淀</span><span class="v">搭建社团资料库与代码仓库，沉淀技术文档、活动 SOP 与回看录播，新成员上手周期明显缩短。</span></div>
+            <div class="kv"><span class="k" style="color:var(--indigo)">数据复盘</span><span class="v">用问卷与报名 / 签到数据评估活动效果，形成《活动复盘表》并据此调整选题与频次，社团活跃度持续提升。</span></div>
+          </div>
+          <div class="tag-list">
+            <span class="tag">目标拆解</span><span class="tag">跨部门沟通</span><span class="tag">资源统筹</span><span class="tag">数据复盘</span>
+          </div>
+        </div>
+
+        <div class="tl-item alt">
+          <div class="tl-head">
+            <div>
+              <h3>大数据可视化分析课程项目 · 组长</h3>
+              <p class="lead">带领 4 人小组完成从选题、取数到仪表盘与汇报的完整分析闭环</p>
+            </div>
+            <span class="period" style="background:rgba(20,184,166,.12);color:var(--teal)">2025.03 — 2025.06</span>
+          </div>
+          <ul class="dots" style="margin-top:10px">
+            <li>负责选题与数据获取，主导指标口径设计，将业务问题拆解为可量化的分析维度。</li>
+            <li>使用 Python（Pandas）完成数据清洗与聚合统计，输出交互式可视化仪表盘与 12 页分析报告，并完成课堂汇报。</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 专业技能 ================= -->
+  <section id="skills">
+    <div class="sec-head">
+      <span class="bars"><b style="background:var(--amber)"></b><b style="background:var(--indigo)"></b></span>
+      <h2>专业技能</h2>
+      <span class="note">工具服务于问题：先定义指标口径，再选择最合适的工具</span>
+    </div>
+    <div class="grid g3">
+      <div class="skill" style="--c:var(--coral)">
+        <h4><i></i>编程与数据处理</h4>
+        <ul>
+          <li>Python：NumPy / Pandas —— 数据清洗、聚合统计、特征处理</li>
+          <li>SQL：多表关联查询、聚合与窗口函数基础</li>
+          <li>C++：面向过程与面向对象编程、数据结构与算法基础</li>
+        </ul>
+      </div>
+      <div class="skill" style="--c:var(--teal)">
+        <h4><i></i>数据可视化与 BI</h4>
+        <ul>
+          <li>Tableau / Power BI / FineBI：交互式仪表盘与指标体系展示</li>
+          <li>Matplotlib / Seaborn：统计图表绘制与图表选型</li>
+          <li>Excel：数据透视表、常用函数与图表呈现</li>
+        </ul>
+      </div>
+      <div class="skill" style="--c:var(--indigo)">
+        <h4><i></i>统计分析与建模</h4>
+        <ul>
+          <li>描述性统计、相关性分析与假设检验、回归分析基础</li>
+          <li>时间序列入门：趋势与季节性识别</li>
+          <li>运筹优化：线性规划、决策分析、库存与排队模型</li>
+        </ul>
+      </div>
+      <div class="skill" style="--c:var(--amber)">
+        <h4><i></i>业务理解与决策支持</h4>
+        <ul>
+          <li>管理学基础：能把业务目标拆解为可量化指标</li>
+          <li>指标体系搭建、异常归因思路与数据分析报告撰写</li>
+          <li>运筹学思维：用模型化处理资源分配与最优化问题</li>
+        </ul>
+      </div>
+      <div class="skill wide" style="--c:var(--sky)">
+        <h4><i></i>语言与工具</h4>
+        <ul>
+          <li>IT 日语：日文技术文档阅读、日文软件环境操作</li>
+          <li>英语：CET-4，可读写英文技术文档</li>
+          <li>Git、Jupyter Notebook、XMind、Office 三件套</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 主修课程 ================= -->
+  <section id="courses">
+    <div class="sec-head">
+      <span class="bars"><b style="background:var(--sky)"></b><b style="background:var(--coral)"></b></span>
+      <h2>主修课程</h2>
+      <span class="note">每一门课，都对应一项数据分析岗位能力</span>
+    </div>
+    <div class="grid g3">
+      <div class="course" style="--c:var(--coral)">
+        <div class="dot">C++</div>
+        <h4>C++ 程序设计</h4>
+        <p>掌握面向过程 / 面向对象编程与基础数据结构算法，具备扎实的逻辑抽象与代码实现能力。</p>
+      </div>
+      <div class="course" style="--c:var(--teal)">
+        <div class="dot">Py</div>
+        <h4>Python 程序设计</h4>
+        <p>掌握语法与常用库，能独立完成脚本编写、数据抓取与批量处理。</p>
+      </div>
+      <div class="course" style="--c:var(--indigo)">
+        <div class="dot">BI</div>
+        <h4>大数据可视化分析</h4>
+        <p>掌握图表选型、配色与信息层级设计，能把数据结论转化为可读的图表与仪表盘。</p>
+      </div>
+      <div class="course" style="--c:var(--amber)">
+        <div class="dot">日</div>
+        <h4>IT 日语</h4>
+        <p>可阅读日文技术文档、操作日文软件环境，具备跨语言信息获取能力。</p>
+      </div>
+      <div class="course" style="--c:var(--sky)">
+        <div class="dot">管</div>
+        <h4>管理学</h4>
+        <p>理解组织、计划与控制等管理流程，能从业务视角定义分析目标与指标。</p>
+      </div>
+      <div class="course" style="--c:var(--coral)">
+        <div class="dot">运</div>
+        <h4>运筹学</h4>
+        <p>掌握线性规划与决策分析方法，能用模型思维处理资源分配与最优化问题。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 兴趣爱好 ================= -->
+  <section id="hobbies">
+    <div class="sec-head">
+      <span class="bars"><b style="background:var(--coral)"></b><b style="background:var(--amber)"></b></span>
+      <h2>兴趣爱好</h2>
+      <span class="note">长期主义者，做事有记录、有复盘</span>
+    </div>
+    <div class="grid g2">
+      <div class="hobby" style="--c:var(--coral)">
+        <div class="icon">游</div>
+        <div>
+          <h4 style="color:var(--coral)">游泳</h4>
+          <p>长期坚持，每周 2–3 次，锻炼耐力与自律；习惯记录配速与圈数，用数据持续优化自己的表现。</p>
+        </div>
+      </div>
+      <div class="hobby" style="--c:var(--teal)">
+        <div class="icon">羽</div>
+        <div>
+          <h4 style="color:var(--teal)">羽毛球</h4>
+          <p>偏爱双打，注重与搭档的配合与临场判断，保持快速反应与团队协作的状态。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 自我评价 ================= -->
+  <section id="summary">
+    <div class="sec-head">
+      <span class="bars"><b style="background:var(--indigo)"></b><b style="background:var(--teal)"></b></span>
+      <h2>自我评价</h2>
+    </div>
+    <div class="grid g3">
+      <div class="sum-item" style="--c:var(--coral)">
+        <h4>复合背景</h4>
+        <p>管理学 + 大数据技术双线训练，既能用 Python / SQL 取数清洗，也能把结果翻译成业务听得懂的结论。</p>
+      </div>
+      <div class="sum-item" style="--c:var(--indigo)">
+        <h4>组织推动力</h4>
+        <p>计算机社团社长经历锻炼了目标拆解、跨部门沟通与抗压落地能力，习惯用数据复盘每一项工作。</p>
+      </div>
+      <div class="sum-item" style="--c:var(--teal)">
+        <h4>学习自驱</h4>
+        <p>持续在公开数据集上练习可视化与报表搭建，新工具上手快，愿意从基础的数据治理踏实做起。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <div class="fl">
+      <a href="tel:15942724817">电话 159-4272-4817</a>
+      <a href="mailto:2937894433@qq.com">邮箱 2937894433@qq.com</a>
+      <a href="#intention">大连财经学院 · 大数据管理与应用</a>
+    </div>
+    <div class="fr">邱子晨 · 数据分析师求职简历</div>
+  </footer>
+
+</div>
+
+<script>
+(function(){
+  var navLinks = document.querySelectorAll('nav a');
+  var map = {};
+  for (var i = 0; i < navLinks.length; i++){
+    var id = navLinks[i].getAttribute('href').replace('#','');
+    map[id] = navLinks[i];
+  }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (map[e.target.id]){
+        if (e.isIntersecting){ map[e.target.id].style.color = 'var(--ink)'; map[e.target.id].style.background = 'var(--tint)'; }
+        else { map[e.target.id].style.color = ''; map[e.target.id].style.background = ''; }
+      }
+    });
+  },{threshold:0.35});
+  for (var id in map) io.observe(document.getElementById(id));
+})();
+</script>
+</body>
+</html>
